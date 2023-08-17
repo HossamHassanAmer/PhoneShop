@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../CSS/vendors/bootstrap-5.3.0/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="/CSS/vendors/bootstrap-icons-1.10.5/font/bootstrap-icons.css">
+    <link rel="icon" type="image/x-icon" href="./imgs/Logo/phone.jpg">
+    <style>
+        .rounded-t-5 {
+            border-top-left-radius: 0.5rem;
+            border-top-right-radius: 0.5rem;
+        }
+
+        section {
+            margin-top: 7rem;
+        }
+
+        .nav-bar {
+            box-shadow: 0px 4px 10px 0 #9b9b9b80;
+            padding: 0 7rem;
+        }
+
+        @media (min-width: 992px) {
+            .rounded-tr-lg-0 {
+                border-top-right-radius: 0;
+            }
+
+            .rounded-bl-lg-5 {
+                border-bottom-left-radius: 0.5rem;
+            }
+        }
+    </style>
+    <title>Phone Shop</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-body fixed-top navbar-expand-md container-fluid nav-bar">
+        <!-- Navbar brand -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+            <i class="bi bi-filter-right fs-3 fw-bold"></i>
+        </button>
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- Left links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html" target="_blank">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contacUs.html">Contact Us <i class="bi bi-chat-dots-fill"></i></a>
+                </li>
+            </ul>
+            <a class="navbar-brand me-2" href="#">
+                <img src="./imgs/Logo/phone.jpg" class="w-25 rounded-pill" alt="MDB Logo" />
+            </a>
+            <!-- Right links -->
+
+            <div class="d-flex align-items-center">
+                <!-- Icon -->
+                <!-- Basket -->
+
+                <div class="mx-3 fs-3">
+                    <i class="bi bi-cart3"></i>
+                    <span class="basket"></span>
+                </div>
+
+                <a href="./login.html">
+                    <button type="button" class=" btn btn-primary btn-lg btn-sm px-3 me-2">Login</button>
+                </a>
+                <a href="./signUp.html">
+                    <button type="button" class="btn btn-primary btn-lg btn-sm m-2">Sign up for free</button>
+                </a>
+                <a class="navbar-brand" href="#">
+                    <img src="./imgs/Logo/img_avatar1.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section: Design Block -->
+    <section class=" text-center text-lg-start  d-flex justify-content-center align-items-center">
+        <div class="card mb-3  d-flex align-self-center">
+            <div class="row g-0 d-flex align-items-center">
+                <div class="col-lg-4 d-none d-lg-flex justify-content-center">
+                    <img src="https://mdbootstrap.com/img/new/ecommerce/vertical/004.jpg" alt="Trendy Pants and Shoes"
+                        class="w-100 rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5 " />
+                </div>
+                <div class="col-lg-8">
+                    <div class="card-body py-5 px-md-5">
+
+                        <form>
+                            <!-- Email input -->
+                            <div class="form-outline  mb-4">
+                                <label class="form-label" for="form2Example1">Email address</label>
+                                <input type="email" id="form2Example1" class="form-control" />
+                            </div>
+
+                            <!-- Password input -->
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="form2Example2">Password</label>
+                                <input type="password" id="form2Example2" class="form-control" />
+                            </div>
+
+                            <!-- 2 column grid layout for inline styling -->
+                            <div class="row mb-4">
+                                <div class="col d-flex justify-content-center">
+                                    <!-- Checkbox -->
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="form2Example31"
+                                            checked />
+                                        <label class="form-check-label" for="form2Example31"> Remember me </label>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <!-- Simple link -->
+                                    <a href="#!">Forgot password?</a>
+                                </div>
+                            </div>
+
+                            <!-- Submit button -->
+                            <button type="button" class="btn btn-primary btn-block mb-4">Sign in</button>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section: Design Block -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white mt-5">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="bi bi-facebook"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="bi bi-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="bi bi-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="bi bi-instagram"></i></a>
+
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-white" href="#">Phone Shop</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link href="../CSS/vendors/bootstrap-5.3.0/css/bootstrap.min.css" rel="stylesheet" >
+  <link rel="stylesheet" href="/CSS/vendors/bootstrap-icons-1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/CSS/style.css">
+  <link rel="icon" type="image/x-icon" href="./imgs/Logo/phone.jpg">
+  <title>Phone Shop</title>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-body fixed-top navbar-expand-md container-fluid nav-bar ">
+    <!-- Container wrapper -->
+
+    <!-- Navbar brand -->
+
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+      <i class="bi bi-filter-right fs-3 fw-bold"></i>
+    </button>
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contacUs.html" >Contact Us <i class="bi bi-chat-dots-fill"></i></a>
+        </li>
+      </ul>
+      <a class="navbar-brand me-2" href="#">
+        <img src="./imgs/Logo/phone.jpg" class="w-25 rounded-pill" alt="MDB Logo" />
+      </a>
+      <!-- Right links -->
+
+      <div class="d-flex align-items-center">
+        <!-- Icons -->
+        <!-- Basket -->
+
+        <div class="mx-3 fs-3">
+          <i class="bi bi-cart3"></i>
+          <span class="basket"></span>
+        </div>
+
+        <a href="./login.html" target="_blank">
+          <button type="button" class=" btn btn-primary btn-lg btn-sm px-3 me-2">Login</button>
+        </a>
+        <a href="./signUp.html" target="_blank">
+          <button type="button" 
+          class="btn btn-primary btn-lg btn-sm m-2">Sign up for free</button>
+        </a>
+
+        <a class="navbar-brand" href="#">
+          <img src="./imgs/Logo/img_avatar1.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill">
+        </a>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Slide Show -->
+  <section>
+    <div class="container flex-lg-row flex-sm-row mt-5">
+      <img src="./imgs/Slide-Show/slide1.jpg" alt="image1" class="slide-show-image w-100 ">
+    </div>
+  </section>
+
+  <!--  Category -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-body">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-filter-right fs-3 fw-bold"></i>
+      </button>
+      <div class="collapse navbar-collapse navbar-nav fs-5 d-flex justify-content-around  my-4" id="navbarNavAltMarkup">
+        <a class="nav-link btn btn-outline-primary filter-btn" onclick="filter('all')" data-type="all">All Product</a>
+        <a class="nav-link btn btn-outline-primary filter-btn" onclick="filter('Iphone')" data-type="Iphone">Iphone</a>
+        <a class="nav-link btn btn-outline-primary filter-btn" onclick="filter('Samsung')" data-type="Samsung">Samsung</a>
+        <a class="nav-link btn btn-outline-primary filter-btn" onclick="filter('Xiaomi')" data-type="Xiaomi">Xiaomi</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Card -->
+  <div>
+    <div class="container">
+      <div class="row g-4" id="cards">
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="content container mt-5">
+    <img src="./imgs/mobile/mobile1.jpeg" alt="">
+
+    <div class="paragraph fs-3 lead">
+      <p><span>Lorem ipsum dolor sit amet:</span> consectetur adipisicing elit. Quibusdam molestias dolorum vel,
+        laudantium similique maxime officiis, est quis, ullam repellat aspernatur quasi. Fugiat consequuntur
+        magni, nemo accusamus eveniet nobis voluptas.
+        Animi quisquam iure quidem sunt.</p>
+    </div>
+  </div>
+
+  <div class="content container  mt-5">
+    <div class="paragraph fs-3 col-lg-6 d-flex lead">
+      <p><span>Lorem ipsum dolor sit amet:</span> consectetur adipisicing elit. Quibusdam molestias dolorum vel,
+        laudantium similique maxime officiis, est quis, ullam repellat aspernatur quasi. Fugiat consequuntur
+        magni, nemo accusamus eveniet nobis voluptas.
+        Animi quisquam iure quidem sunt.</p>
+    </div>
+    <img src="./imgs/mobile/mobile3.jpeg" class="col-lg-6 d-flex" alt="">
+  </div>
+  <div class="container-fluid px-5 fs-1 fw-bolder d-flex justify-content-end">
+    <i class="up bi bi-arrow-up-short"></i>
+
+  </div>
+  <!-- Footer -->
+  <footer class="bg-dark text-center text-white mt-5">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-facebook"></i></a>
+
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-twitter"></i></a>
+
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-google"></i></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-instagram"></i></a>
+
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright:
+      <a class="text-white" href="#">Phone Shop</a>
+    </div>
+    <div>
+      <button class="btn btn-outline-secondary ">
+        <a href="tel: 01009318788" class="text-decoration-none text-light">Tel: 01009318788</a>
+      </button>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <script type="text/template" id="card-temp">
+    <div class="col-lg-3 col-sm-12" data-type="{{type}}">
+      <div class="card text-center d-flex justify-content-center">
+        <img src="{{image}}" class="card-img-top mt-2 w-50 h-25 d-flex align-self-center" alt="Skyscrapers" />
+        <div class="card-body">
+          <h5 class="card-title card-titleee">{{title}}</h5>
+          <p class="card-text">{{brief}}</p>
+          <button class="btn btn-outline-primary"  onclick="increment()" id="add-card">Add To Card</button>
+        </div>
+      </div>  
+      </div>
+  </script>
+<script src="/JS/main.js"></script>
+</body>
+
+</html>
